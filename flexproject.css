@@ -1,0 +1,446 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'SEGOIUI';
+    src: url(/fonts/Segoe\ UI.woff);
+}
+body
+{
+  font-family: 'SEGOIUI';  
+  font-size: 13px;
+}
+ul
+{
+    
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+img
+{
+    width: 100%;
+    height: auto;
+}
+.container
+{
+ 
+    max-width: 1360px;
+    margin:0 auto;
+    /* border: solid; */
+}
+.carousel  h2,.image  h2
+{
+    font-size: 34px;
+    font-weight: 600;
+}
+.carousel div,.image  div
+{
+    font-size: 15px;
+    /* margin: 19px 0px; */
+}
+.carousel .box div:nth-child(2)
+{
+    padding-top: 9px;
+    padding-bottom: 19px;
+}
+i
+{
+    position: relative;
+    left: 0px;
+    margin-left: 8px;
+}
+/* header starts */
+.header img
+{
+    width: 108px;
+    height: 23px;
+    flex-grow:1;
+}
+
+.header 
+{
+    display: flex;
+    align-items:center;
+    padding: 16px 8px;
+    position: relative;
+}
+.header a
+{
+    color: black;
+}
+.navbar
+{
+    flex-grow: 2;
+    display: flex;
+}
+.navbar .ul1
+{
+    display: flex;
+}
+.navbar ul li
+{
+    padding: 0px 16px;
+}
+.header .navbar ul li :hover
+{
+    border-bottom: solid;
+}
+.header .tmenur ul li a:hover
+{
+    border-bottom: solid;
+}
+.dropdowncontent
+{
+    position: absolute;
+    display: none;
+    z-index: 99999;
+    background: white;
+    right: 0px;;
+    top: 53px;
+}
+.dropdowncontent .column h3
+{
+    padding-bottom: 16px 0px;
+}
+.dropdowncontent a
+{
+    border-bottom: none;
+    padding: 16px 0;
+}
+.dropdowncontent .row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dropdowncontent .row .column
+{
+    display: flex;
+    flex-flow: column;
+    padding: 10px 30px 10px 30px;
+    max-width: 206px;
+}
+.dropdowncontent .row .column a:hover
+{
+    text-decoration: underline;
+}
+.img2,.navbar i,.navbar .ul2
+{
+    display: none;
+}
+/* .img2,.navbar i
+{
+    display: none;
+} */
+.header div
+{
+    padding: 0 10px;
+}
+/* header ends and banner starts */
+
+.banner .container
+{
+    text-align: center;
+    background: #950C17;
+    padding: 10px 0;
+    border: solid #950C17;
+    color: white;
+    
+}
+/* banner ends carousels starts */
+#carouselContainer1,#carouselContainer2,.image 
+{
+    max-width: 1200px;
+    margin: 10px auto;
+    position: relative;
+}
+.carousel .box
+{
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 40%;
+}
+.slick-prev
+{
+    z-index: 1;
+    left: -78px !important;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.slick-next
+{
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+} 
+
+.slick-prev:before, .slick-next:before { 
+    color:rgb(136, 136, 136) !important;
+    font-size: 55px!important;
+}
+.carousel .button
+{
+    max-width: 40%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 8px 14px;
+    
+}
+#desc1,#desc2,#desc3,#desc4,#desc13 {
+    position: relative;
+    right: 0px;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+}
+.menu .box
+{
+    margin: 63px 35px;
+}
+.menu img
+{
+    width: 40px;
+    height: 40px;
+}
+.menu .content
+{
+    display: flex;
+    flex-flow: column;
+    max-width: 125px;
+    margin: 0 auto;
+    align-items: center;
+}
+.menu .content div
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #950C17
+}
+.menu .content div span:hover
+{
+    border-bottom: solid;
+}
+/* menu ends and options start here */
+.option
+{
+    display: flex;
+    /* flex-flow: wrap; */
+    /* justify-content: space-between; */
+}
+.option .box
+{
+    font-size: 15px;
+    max-width: 95%;
+}
+.para
+{
+    max-width: 95%;
+    margin-top: 9px;
+    margin-bottom: 13px;
+}
+.option .box h2
+{
+    margin-top: 15px;
+}
+.option .holder
+{
+    font-weight: 600;
+    color: #950C17
+}
+.option img
+{
+    width: 90%;
+}
+ /* option ends here and image container starts  */
+ .image
+ {
+     position: relative;
+ }
+ .image .content
+ {
+    
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 40%;
+}
+.image .button
+{
+    background: black;
+    color: white;
+    padding: 8px 14px;
+    max-width: 40%;
+}
+.image p
+{
+    padding-top: 9px;
+    padding-bottom: 19px;
+}
+/* image container ends and footer starts */
+/*footer ends here */
+.ftop
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.ftop div
+{
+    width: 100%;
+}
+.ftop h4
+{
+    padding: 10px 0;
+}
+.fbottom
+{
+    display: flex;
+    justify-content: space-between;
+}
+.fbottombottom ul
+{
+    text-align: right;
+}
+.fbottombottom ul li
+{
+    display: inline;
+    padding: 0px 10px;
+}
+.footer li
+{
+    border-bottom: solid white;
+    line-height: 25px
+}
+.footer li:hover
+{
+    text-decoration: underline
+}
+
+/* responsive starts */
+@media  all and (max-width:1048px)
+{
+    /* optional */
+    .header,.ftop,.fbottom
+    {
+        flex-flow: wrap;
+    }
+  
+    .container,#carouselContainer1,#carouselContainer2,.image
+    {
+        
+        width: 100%;
+        min-width: 475px;
+        padding: 20px;
+        /* background: yellow; */
+    }
+    /* header section */
+    .navbar
+    {
+        flex-grow: 0;
+    }
+    .navbar i
+    {
+        display: block;
+    }
+
+    .navbar .ul2
+    {
+      
+        position: absolute;
+        background: white;
+        color: black;
+        z-index: 1111;
+        width: 100%;
+        left: 0px;
+        top: 57px;
+    }
+    .img1, .navbar .ul1,.megamenu
+    {
+        display: none;
+    }
+    .img2
+    {
+        display: block;
+        flex-grow: 2;
+        text-align: center;
+    }
+    /* banner section */
+    .banner{
+        display:none
+    }
+    /* carousel section */
+    .carousel .box
+    {
+        position: static;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .slick-prev
+    {
+        left: 0px !important;
+      
+    }
+    .slick-next
+    {
+        right: 17px !important;
+      
+    }
+    /* menu section */
+    .menu
+    {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    .menu .box
+    {
+        margin: 0;
+    }
+    .menu .content
+    {
+        flex-flow: row;
+        max-width: 100%;
+    }
+    .menu img
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .menu .content div
+    {
+        padding: 15px;
+    }
+    /* option section */
+    .option
+    {
+        flex-wrap: wrap;
+        
+    }
+    .option .box .image
+    {
+        text-align: center;
+    }
+    /* image section */
+    .image .content
+    {
+        position: static;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
